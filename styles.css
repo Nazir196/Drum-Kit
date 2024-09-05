@@ -1,0 +1,144 @@
+body {
+  text-align: center;
+  background-color: #283149;
+  padding: 20px; /* Added some padding for smaller screens */
+  margin: 0; /* Ensure there's no margin around the body */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh; /* Full viewport height */
+}
+
+h1 {
+  font-size: 4rem; /* Slightly smaller to fit smaller screens */
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+.w {
+  background-image: url("images/tom1.png");
+}
+
+.a {
+  background-image: url("images/tom2.png");
+}
+
+.s {
+  background-image: url("images/tom3.png");
+}
+
+.d {
+  background-image: url("images/tom4.png");
+}
+
+.j {
+  background-image: url("images/snare.png");
+}
+
+.k {
+  background-image: url("images/crash.png");
+}
+
+.l {
+  background-image: url("images/kick.png");
+}
+
+.set {
+  margin: 5% auto; /* Adjusted for better centering */
+  display: flex;
+  flex-wrap: wrap; /* Allows the drum buttons to wrap on smaller screens */
+  justify-content: center; /* Centers the drum buttons horizontally */
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 4rem; /* Reduced for small screens */
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 120px; /* Reduced size for smaller screens */
+  height: 120px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+/* Media Queries */
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 10px; /* Adjusted padding for small devices */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Further reduced for small devices */
+  }
+
+  .drum {
+    width: 80px;
+    height: 80px; /* Reduced button size for phones */
+    font-size: 2rem; /* Smaller text for the buttons */
+  }
+
+  .set {
+    margin: 2% auto; /* Reduced margin for smaller devices */
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3.5rem; /* Slightly larger for tablets */
+  }
+
+  .drum {
+    width: 100px;
+    height: 100px; /* Medium size for tablets */
+    font-size: 3rem;
+  }
+
+  .set {
+    margin: 5% auto;
+  }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 5rem; /* Large size for desktops */
+  }
+
+  .drum {
+    width: 150px;
+    height: 150px; /* Original size for larger screens */
+    font-size: 5rem;
+  }
+
+  .set {
+    margin: 10% auto; /* Original margin */
+  }
+}
